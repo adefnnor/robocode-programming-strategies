@@ -66,6 +66,37 @@ Strategy:
 
 This robot represents the most sophisticated implementation in the project and demonstrates **predictive targeting in dynamic adversarial environments**.
 
+### Telos
+
+A positional control robot that prioritizes structured movement and controlled engagement zones.
+
+Strategy:
+
+* Uses the AdvancedRobot API to independently manage radar, gun, and movement systems.
+* Navigates toward a predefined rectangular path within the battlefield, aligning itself with strategic edges and corners.
+* Implements a state-based movement loop to patrol the area in a predictable but stable pattern.
+* Locks radar upon detecting an opponent to maintain consistent tracking.
+* Uses an iterative predictive targeting algorithm that accounts for both linear and circular enemy motion.
+* Adjusts firepower dynamically based on distance, favoring precision at range and maximum damage at close quarters.
+  
+This robot emphasizes positional advantage and controlled movement combined with advanced predictive aiming.
+
+### SpinCrusher
+
+An aggressive orbiting robot designed for continuous pressure, evasive movement, and close-range dominance.
+
+Strategy:
+
+* Uses the AdvancedRobot API for fully decoupled radar, gun, and movement control.
+* Maintains radar lock to ensure uninterrupted enemy tracking.
+* Circles opponents at a preferred distance using adaptive orbiting, constantly adjusting angle and spacing.
+* Incorporates wall avoidance and reactive direction changes when hit to improve survivability.
+* Uses a predictive targeting system tailored for rotational enemy motion, iteratively estimating future positions.
+* Dynamically scales firepower based on distance to balance energy efficiency and hit probability.
+* Switches to a ramming and high-power firing tactic when the opponent is at very close range.
+  
+This robot blends mobility, aggression, and predictive firing into a fast-paced, pressure-oriented combat style.
+
 ## Concepts Explored
 
 * Autonomous agent behavior
